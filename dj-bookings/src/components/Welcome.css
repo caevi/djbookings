@@ -5,80 +5,99 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #000000;
-    color: white;
+    background-color: #1a1a1a;  /* Dark grey background for a sleek look */
+    color: #fff;
+    font-family: 'Poppins', sans-serif;  /* Modern sans-serif font */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     opacity: 0;
     animation: fadeIn 1.5s ease-in-out forwards;
-  }
-  
-  .welcome-content {
+}
+
+.welcome-content {
     text-align: center;
-    padding: 20px;
-    border-radius: 8px;
-   background-image:url("setup.jpg");
-   background-size: 1000px;
+    padding: 50px 40px;
+    max-width: 700px;  /* Limit max-width to keep design consistent */
+    background-color: #2d2d2d;  /* Slightly lighter grey background */
+    background: linear-gradient(45deg, #ff6a00, #d10000);  /* Gradient background */
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);  /* Slightly bigger shadow for depth */
     animation: slideIn 1.5s ease-out forwards;
-  }
-  
-  .welcome-title {
-    font-size: 2.5rem;
-    color:#fcfcfc;
-    background-color:#1b1a1a3a;
-    font-family: 'Matemasie', sans-serif;
-    margin-bottom: 20px;
+}
+
+.welcome-title {
+    font-size: 3.5rem;  /* Larger, impactful title */
+    color: #ffffff;
+     /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    font-family: 'Montserrat', sans-serif;  /* Stylish and bold font for the title */
     animation: titleZoom 1s ease-in-out forwards;
-  }
-  
-  .welcome-message {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-  }
-  
-  .cta-btn {
-    background-color: #971e1e6c;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);  /* Shadow for more contrast */
+}
+
+.welcome-message {
+    font-size: 1.3rem;
+    color: #f1f1f1;
+    line-height: 1.7;
+    margin-bottom: 40px;
+    max-width: 600px;  /* Restricted width for better readability */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-btn {
+    background-color: #ff583367;  /* Warm orange-red button color */
     color: white;
     border: none;
-    padding: 15px 30px;
-    font-size: 1rem;
+    padding: 18px 45px;
+    font-size: 1.1rem;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .cta-btn:hover {
-    background-color: #d10000;
-  }
-  
-  /* Keyframe Animations */
-  @keyframes fadeIn {
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);  /* Subtle shadow for depth */
+}
+
+.cta-btn:hover {
+    background-color: #d10000;  /* Darker red on hover */
+    transform: translateY(-4px);  /* Button lifts on hover */
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);  /* Increase shadow on hover */
+}
+
+.cta-btn:active {
+    transform: translateY(2px);  /* Slight press effect */
+}
+
+@keyframes fadeIn {
     from {
-      opacity: 0;
+        opacity: 0;
     }
     to {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  
-  @keyframes slideIn {
+}
+
+@keyframes slideIn {
     from {
-      transform: translateY(30px);
-      opacity: 0;
+        transform: translateY(40px);
+        opacity: 0;
     }
     to {
-      transform: translateY(0);
-      opacity: 1;
+        transform: translateY(0);
+        opacity: 1;
     }
-  }
-  
-  @keyframes titleZoom {
+}
+
+@keyframes titleZoom {
     from {
-      transform: scale(0.5);
-      opacity: 0;
+        transform: scale(0.7);
+        opacity: 0;
     }
     to {
-      transform: scale(1);
-      opacity: 1;
+        transform: scale(1);
+        opacity: 1;
     }
-  }
-  
+}
